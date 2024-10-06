@@ -3,6 +3,7 @@ local sqlite3 = require('lsqlite3')
 
 RealityDb = RealityDb or sqlite3.open_memory()
 RealityDbAdmin = RealityDbAdmin or require('DbAdmin').new(RealityDb)
+-- RealityDbAdmin = RealityDbAdmin or require('@rakis/DbAdmin').new(RealityDb) - use when DbAdmin is installed with APM
 
 --#region Initialization
 
